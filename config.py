@@ -23,21 +23,52 @@ curl_str = os.getenv('WXREAD_CURL_BASH')
 
 # headers、cookies是一个省略模版，本地或者docker部署时对应替换
 cookies = {
-    'RK': 'oxEY1bTnXf',
-    'ptcz': '53e3b35a9486dd63c4d06430b05aa169402117fc407dc5cc9329b41e59f62e2b',
-    'pac_uid': '0_e63870bcecc18',
-    'iip': '0',
-    '_qimei_uuid42': '183070d3135100ee797b08bc922054dc3062834291',
-    'wr_avatar': 'https%3A%2F%2Fthirdwx.qlogo.cn%2Fmmopen%2Fvi_32%2FeEOpSbFh2Mb1bUxMW9Y3FRPfXwWvOLaNlsjWIkcKeeNg6vlVS5kOVuhNKGQ1M8zaggLqMPmpE5qIUdqEXlQgYg%2F132',
-    'wr_gender': '0',
+    'RK': 'PAf05Nn7SK',
+    'ptcz': '7ace3f52f435edbb72b4367c779bfdb7aae1ef8b44c83730f661450d738a5799',
+    '_clck': 'atn58j|1|fzc|0',
+    'wr_fp': '1775422744',
+    'wr_ql': '0',
+    'wr_theme': 'white',
+    'wr_pf': 'undefined',
+    'wr_vid': '8164592',
+    'wr_rt': 'web@Jta300dxdwvSe3sSaWc_AL',
+    'wr_localvid': '40e32c1067c94f040ec0f47',
+    'wr_name': '一个大王',
+    'wr_avatar': 'https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTI9OnUwfOhxY49wianxajBV3r5ubtopKyDgvo4J5Xz896ias5PnXiarQBgXcAK8oHRsWsDicZ2Pwg9xaQ/132',
+    'wr_gender': '2',
+    'Qs_lvt_323937': '1760447418,1760457093',
+    'Qs_pv_323937': '565778906381805100,3271723941448712000',
+    'wr_skey': 'r6Zo4dHa',
+    'wr_gid': '249807531'
 }
 
 headers = {
-    'accept': 'application/json, text/plain, */*',
-    'accept-language': 'zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6,ko;q=0.5',
-    'baggage': 'sentry-environment=production,sentry-release=dev-1730698697208,sentry-public_key=ed67ed71f7804a038e898ba54bd66e44,sentry-trace_id=1ff5a0725f8841088b42f97109c45862',
-    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0',
+    # HTTP/2 特殊头部
+    ":authority": "weread.qq.com",
+    ":method": "POST",
+    ":path": "/web/book/read",
+    ":scheme": "https",
+    
+    # 标准头部
+    "accept": "application/json, text/plain, */*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "zh-CN,zh;q=0.9,en;q=0.8",
+    "baggage": "sentry-environment=production,sentry-release=dev-1760449839699,sentry-public_key=ed67ed71f7804a038e898ba54bd66e44,sentry-trace_id=e935c6ae91524109a3cc55398846b314",
+    "content-length": "389",
+    "content-type": "application/json;charset=UTF-8",
+    "origin": "https://weread.qq.com",
+    "priority": "u=1, i",
+    "referer": "https://weread.qq.com/web/reader/ce032b305a9bc1ce0b0dd2akf4b32ef025ef4b9ec30acd6",
+    "sec-ch-ua": "\"Google Chrome\";v=\"141\", \"Not?A_Brand\";v=\"8\", \"Chromium\";v=\"141\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "sentry-trace": "e935c6ae91524109a3cc55398846b314-a02051b405184e4b",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36",
 }
+
 
 
 # 书籍
